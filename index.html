@@ -445,8 +445,95 @@
 
  <!--=============== SCROLLREVEAL ===============-->
  <script src="js/scrollreveal.min.js"></script>
-      <script src="js/script.js"></script>
 
+
+
+
+      <script>
+      /*=============== SCROLL REVEAL ANIMATION ===============*/
+      const sr = ScrollReveal({
+          origin: 'top',
+          distance: '60px',
+          duration: 3000,
+          delay: 400,
+          // reset: true // animation repeat
+      })
+      
+      sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
+      sr.reveal(`.home__card`, {delay: 600, distance: '100px', interval: 100})
+      sr.reveal(`.join__image, .container1`, {origin: 'right' , distance: '300px'})
+      sr.reveal(`.about__image, .container`, {origin: 'left' , distance: '300px'})
+      sr.reveal(`.popular__card`, {interval: 200})
+      
+
+
+
+      let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .nav__menu');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+
+var swiper = new Swiper(".home-slider", {
+    loop:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+
+
+let loadMoreBtn = document.querySelector('.packages .load-more .btn');
+let currentItem = 3;
+
+loadMoreBtn.onclick = () => {
+    let boxes = document.querySelectorAll('.packages .box-container .box');
+    for (let i = currentItem; i < Math.min(currentItem + 3, boxes.length); i++) {
+        boxes[i].style.display = 'inline-block';
+    }
+    currentItem += 3;
+    if (currentItem >= boxes.length) {
+        loadMoreBtn.style.display = 'none';
+    }
+}
+
+
+
+ /*=============== SHOW SCROLL UP ===============*/ 
+ const scrollUp = () =>{
+          const scrollUp = document.getElementById('scroll-up')
+          // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+          this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                              : scrollUp.classList.remove('show-scroll')
+      }
+      window.addEventListener('scroll', scrollUp)
+      
+
+    </script>
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 </body>
 </html>
