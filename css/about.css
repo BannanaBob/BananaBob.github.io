@@ -326,12 +326,12 @@
  .gallery {
     --s: 130px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto) !important;
     gap: 5px;
     position: relative;
     align-content: center;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: center !important;
+    align-items: baseline !important;
     justify-items: center;
     margin: 2rem;
     margin-bottom: 2rem;
