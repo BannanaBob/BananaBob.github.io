@@ -355,7 +355,7 @@
 /* Safari-specific styles */
 @supports not (-webkit-appearance: none) {
     .gallery input {
-        position: static; /* Change position to static for Safari */
+        position: absolute; /* Change position to static for Safari */
         border: none; /* Remove border for Safari */
         background-color: transparent; /* Make background transparent for Safari */
         -webkit-appearance: button; /* Use button appearance for Safari */
