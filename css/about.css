@@ -338,11 +338,12 @@
     padding: 1rem;
 }
   
-  .gallery input {
+.gallery input {
     position: absolute;
     border: 2px solid #1c1b1b;
     border-radius: 50%;
-    inset: calc(50% - var(--s)/3);
+    top: calc(50% - var(--s)/3);
+    left: calc(50% - var(--s)/3); /* Adjust as necessary */
     cursor: pointer;
     --g: linear-gradient(#181818 0 0) no-repeat;
     background: var(--g) 50%/var(--b,0%) 3px,var(--g) 50%/3px var(--b,0%);
@@ -350,7 +351,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-  }
+}
 
 /* Img:hover */
   #myImg1:hover {
