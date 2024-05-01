@@ -325,7 +325,7 @@
 
  .gallery {
     --s: 130px;
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(3, auto) !important;
     gap: 5px;
     position: relative;
