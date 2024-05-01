@@ -334,27 +334,23 @@
     align-items: baseline;
     justify-items: center;
     margin: 2rem;
-    border: 2px solid #1c1b1b;
-    border-radius: 50%;
     margin-bottom: 2rem;
     padding: 1rem;
 }
   
-.gallery input {
+  .gallery input {
     position: absolute;
-    top: 50%; /* Position the input element vertically centered */
-    left: 50%; /* Position the input element horizontally centered */
-    transform: translate(-50%, -50%); /* Center the input element precisely */
+    border: 2px solid #1c1b1b;
+    border-radius: 50%;
+    inset: calc(50% - var(--s)/3);
     cursor: pointer;
-    border: none; /* Remove border from input element */
-    background-color: transparent; /* Make the input element transparent */
+    --g: linear-gradient(#181818 0 0) no-repeat;
+    background: var(--g) 50%/var(--b,0%) 3px,var(--g) 50%/3px var(--b,0%);
+    transition: 1.5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
-    width: 30px; /* Adjust width as needed */
-    height: 30px; /* Adjust height as needed */
-    border-radius: 50%; /* Apply border-radius to the input element */
-    z-index: 1; /* Ensure the input element is above other content */
-    /* Add any other styling you need for the input element */
-}
+  }
 
 /* Img:hover */
   #myImg1:hover {
