@@ -357,6 +357,25 @@
     .gallery {
         display: block; /* Change display to block for Safari */
         text-align: center; /* Center align the button */
+
+
+         --s: 130px;
+    display: grid !important;
+    grid-template-columns: repeat(3, auto) !important;
+    gap: 5px;
+    position: relative;
+    align-content: center;
+    justify-content: center !important;
+    align-items: baseline !important;
+    justify-items: center;
+    margin: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+
+    position: absolute;
+    border: 2px solid #1c1b1b;
+    border-radius: 50%;
     }
 
     .gallery button {
