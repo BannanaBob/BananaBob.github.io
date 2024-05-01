@@ -323,7 +323,7 @@
 
 
 
-  .gallery {
+ .gallery {
     --s: 130px;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -337,8 +337,8 @@
     margin-bottom: 2rem;
     padding: 1rem;
 }
-  
-  .gallery input {
+
+.gallery input {
     position: absolute;
     border: 2px solid #1c1b1b;
     border-radius: 50%;
@@ -350,7 +350,24 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-  }
+}
+
+/* Safari-specific styles */
+@supports (-webkit-appearance: none) {
+    .gallery {
+        display: block; /* Change display to block for Safari */
+        text-align: center; /* Center align the button */
+    }
+
+    .gallery button {
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+}
+
+
+
+
+
 
 /* Img:hover */
   #myImg1:hover {
