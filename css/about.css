@@ -337,7 +337,7 @@
     margin-bottom: 2rem;
     padding: 1rem;
 }
-  
+
 .gallery input {
     position: absolute;
     border: 2px solid #1c1b1b;
@@ -355,11 +355,16 @@
 /* Safari-specific styles */
 @supports not (-webkit-appearance: none) {
     .gallery input {
-        position: absolute; /* Change position to static for Safari */
+        position: static; /* Change position to static for Safari */
         border: none; /* Remove border for Safari */
         background-color: transparent; /* Make background transparent for Safari */
         -webkit-appearance: button; /* Use button appearance for Safari */
         appearance: button; /* Use button appearance for Safari */
+    }
+
+    .adjustable-button {
+        display: block;
+        margin: 20px auto; /* Adjust margin as needed */
     }
 }
 
