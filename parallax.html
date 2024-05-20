@@ -43,16 +43,32 @@
 <body>
 
 <!--==================== HEADER ====================-->
+
 <section class="header" id="header">
-    <a href="index.html" class="logo">travel</a>
+    <a href="index.html" class="logo">zelená vila</a>
 
     <nav class="nav__menu" id="nav-menu">
           <ul class="nav__list">
              <li class="nav__item"> 
+
+
+                <div class="checkbox-wrapper-5">
+                    <div class="check" id="checkbox-container">
+                      <input checked="" id="check-5" type="checkbox">
+                      <label for="check-5"></label>
+                      <div class="bubble">English</div> <!-- New bubble element -->
+                    </div>
+                  </div>
+                  
+                </li>
+
+
+            <ul class="nav__list">
+                <li class="nav__item"> 
              <div id="btn" class="fas fa-crow"></div>
                 <a href="index.html" class="nav__link1 active-link">home</a>
              
-             </li>
+            </li>
 
            <li class="nav__item">
               <a href="about.html" class="nav__link1">about</a>
@@ -76,14 +92,7 @@
 
 
              <li class="nav__item"> <a href="form.html" class="nav__link1">Kontakt</a> </li>
-             <li class="nav__item"> <a href="#" class="nav__link1">Česky<i class="fas fa-caret-down"></i></a>
              
-                <div class="dropdown__menu" id="dropdown-menu">
-                   <ul>
-                      <li><a href="../indexEN.html">English</a></li>
-                   </ul>
-                </div>
-             </li>
              </nav>
        <div id="menu-btn" class="fas fa-bars"></div>
        
@@ -94,7 +103,7 @@
 <section class="parallax">
     <img src="images/parallax/first.jpg" id="first">
     <img src="images/parallax/hawk.png" id="hawk", style= "width: 10%;height: 10%";>
-    <img class="last_img" src="images/parallax/Last2.png" id="last">
+    <img class="last_img" src="images/parallax/Last2_1.png" id="last">
     <h1 id="text">New adwenture</h1>
 </section>
 
@@ -142,6 +151,15 @@
         </div>
 
 
+<!-- custom js file link -->
+<!--========== SCROLL UP ==========-->
+<a href="" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+ </a>
+
+
+
+
 
 </div>
     <div class="bottom">
@@ -176,15 +194,6 @@
 </script>
 
 
-<!-- custom js file link -->
-<!--========== SCROLL UP ==========-->
-<a href="" class="scrollup" id="scroll-up">
-    <i class="ri-arrow-up-line"></i>
- </a>
-
-
-
-
 
 
 <!-- swiper js link -->
@@ -195,9 +204,29 @@
 
 <!--=============== SCROLLREVEAL ===============-->
 
-<script src="js/script.js"></script>
 
 <script src="js/scrollreveal.min.js"></script>
+<script src="js/script_2.js"></script>
+
+
+
+
+<script>
+
+
+    /*=============== SHOW SCROLL UP ===============*/ 
+   const scrollUp = () =>{
+       const scrollUp = document.getElementById('scroll-up')
+       // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+       this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                           : scrollUp.classList.remove('show-scroll')
+   }
+   window.addEventListener('scroll', scrollUp)
+   
+   
+       </script>
+
+
 
 </body>
 </html>

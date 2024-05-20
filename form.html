@@ -22,8 +22,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <link rel="stylesheet" href="css/Form.css">
-    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    
 </head>
 <body>
     
@@ -35,62 +37,110 @@
     <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Responsive Contact Us Page</title>
       <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
 <!--==================== HEADER ====================-->
-<header class="header" id="header">
-  <nav class="nav container">
 
-    <a href="index.html" class="logo">travel</a>
 
+
+<section class="header" id="header">
+  <a href="index.html" class="logo">zelená vila</a>
+
+  <nav class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li class="nav__item"> 
+
+
+              <div class="checkbox-wrapper-5">
+                  <div class="check" id="checkbox-container">
+                    <input checked="" id="check-5" type="checkbox">
+                    <label for="check-5"></label>
+                    <div class="bubble">English</div> <!-- New bubble element -->
+                  </div>
+                </div>
+                
+              </li>
+
+
+          <ul class="nav__list">
+              <li class="nav__item"> 
+           <div id="btn" class="fas fa-crow"></div>
+              <a href="index.html" class="nav__link1 active-link">home</a>
+           
+          </li>
+
+
+           <li class="nav__item">
+              <a href="about.html" class="nav__link1">about</a>
+           </li>
+
+
+
+           <li class="nav__item"> <a href="package.html" class="nav__link1">package</a>
+           
+           </li>
+
+           <li class="nav__item">
+              <a href="#" class="nav__link1">galery<i class="fas fa-caret-down"></i></a>
+
+              <div class="dropdown__menu">
+                 <ul>
+                    <li><a href="parallax.html">summer</a></li>
+                    <li><a href="parallax.html">winter</a></li>
+                 </ul>
+              </div>
+           </li>
+
+           <li class="nav__item"> <a href="index.html#Price" class="nav__link1">Price</a> </li>
+
+
+           <li class="nav__item"> <a href="form.html" class="nav__link1">Kontakt</a> </li>
+        
+           </nav>
+
+
+     <div id="menu-btn" class="fas fa-bars"></div>
      
+  </section>
+        
 
-          <ul>
-           <li class="nav__item"> <a href="index.html" class="nav__link1">Domů</a> </li>
-          </ul>
-        <!--close button-->
-        <div class="nav__close" id="nav-close">
-           <i class="ri-close-line"></i>
-        </div>
-     </div>
-
-     <!--toggle button-->
-     <div class="nav__toggle" id="nav-toggle">
-        <i class="ri-menu-line"></i>
-     </div>
-  </nav>
-
-
-  
 </header>
-<section>
+
+
+
+
+
+<section class="table_container">
+
+<div class="section_1">
   <div class="header_1">
-  <div class="section__title">
-    <h2>ZÍSKEJTE SVE ODPOVEDI BĚHEM NĚKOLIKA MINUT!</h2>
-    <div class="contact_form">
+  <div class="section__title_1">
+    <h2>ZÍSKEJTE SVE ODPOVĚDI BĚHEM NĚKOLIKA MINUT!</h2>
     <p>Rezervujte svůj dokonalý pobyt již dnes! Jediný dům, ve kterém máte vše, co potřebujete, bez zbytečného vybírání.</p>
   </div>
+</div>
 </div>
 
 
 
-      <section>
+
+
       
-      <div class="explore__content1 container_form grid">
+      <div class="explore__content1 container_form grid_1">
         <div class="explore__data">
-           <h2 class="section__title">
+           <h2 class="section__title_2">
               kontakt
            </h2>
 
 
           <div class="contact_form">
-                <a href="#">Jednatel Jmeno Prijmeni</a>
+                <a href="#">Alena Zmelikova</a>
                 <a href="#"><i class="fas fa-phone"></i>+420 123 456 789</a>
-                <a href="form.html"><i class="fas fa-envelope"></i>jmeno@domena.cz</a>
+                <a href="form.html"><i class="fas fa-envelope"></i>zeleny_dum@gmail.com</a>
                 <a href="https://www.instagram.com/miakhalifa/"><i class="fab fa-instagram"></i> instagram</a>
                 <a href='#'> <i class="fab fa-linkedin"></i> linkedIn</a>
              </div>
@@ -135,8 +185,9 @@
             </div>
           </div>
           </div>
-      </section>
+        </div>
 
+      </section>
 
 
       <!--========== SCROLL UP ==========-->
@@ -148,7 +199,12 @@
      <script src="assets/js/scrollreveal.min.js"></script>
 
      <!--=============== MAIN JS ===============-->
-     <script src="assets/js/main.js"></script>
+     <script src="js/script_2.js"></script>
+
+
+
+
+
       
     </body>
     </html>

@@ -8,6 +8,7 @@
 
     <!-- swiper css link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
 
     <!--=============== FAVICON ===============-->
@@ -17,6 +18,9 @@
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
+
+
+
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -24,18 +28,32 @@
 <body>
     
 <!--==================== HEADER ====================-->
+
 <section class="header" id="header">
-    <a href="index.html" class="logo">travel</a>
+    <a href="index.html" class="logo">zelená vila</a>
 
     <nav class="nav__menu" id="nav-menu">
           <ul class="nav__list">
              <li class="nav__item"> 
 
+
+                <div class="checkbox-wrapper-5">
+                    <div class="check" id="checkbox-container">
+                      <input checked="" id="check-5" type="checkbox">
+                      <label for="check-5"></label>
+                      <div class="bubble">English</div> <!-- New bubble element -->
+                    </div>
+                  </div>
+                  
+                </li>
+
+
+            <ul class="nav__list">
+                <li class="nav__item"> 
              <div id="btn" class="fas fa-crow"></div>
                 <a href="index.html" class="nav__link1 active-link">home</a>
              
-             
-             </li>
+            </li>
 
              <li class="nav__item">
                 <a href="about.html" class="nav__link1">about</a>
@@ -66,15 +84,6 @@
 
              <li class="nav__item"> <a href="form.html" class="nav__link1">Kontakt</a> </li>
           
-
-             <li class="nav__item"> <a href="#" class="nav__link1">Česky<i class="fas fa-caret-down"></i></a>
-             
-                <div class="dropdown__menu" id="dropdown-menu">
-                   <ul>
-                      <li><a href="../indexEN.html">English</a></li>
-                   </ul>
-                </div>
-             </li>
              </nav>
 
 
@@ -85,152 +94,200 @@
 <!--==================== HEADER END ====================-->
 
 <div class="heading" style="background:url(images/header-bg-2.png) no-repeat">
-    <h1>Our Recomendation</h1>
+    <h1 class="recomend">Our Recomendation</h1>
 </div>
-
-
 <!-- packages section starts -->
-<section class="packages">
 
-    <h1 class="heading-title"> Restaurants and places to get taste of South Moravia </h1>
+
+
+<section class="packages">
+    <h1 class="heading-title">Restaurants and places to get taste of South Moravia</h1>
 
     <div class="box-container">
-
-        <div class="box">
-         <div class="image">
-            <img src="images/bukovanskymlyn.jpg" alt="" srcset="">
-        </div>
-        <div class="content">
-            <h3>Restaurant-pension</h3>
-            <p>A place to eat some typical Czech cousine.</p>
-            <a href="https://www.bukovansky-mlyn.cz/" class="btn1">visit now</a>
-        </div>
-    </div>
-
-        <div class="box">
+        <div class="box" id="box1">
             <div class="image">
-            <img src="images/kamenak_myslivna.jpg" alt="" srcset="">
+                <img src="images/bukovanskymlyn.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Restaurant-pension</h3>
+                <p>A place to eat some typical Czech cuisine.</p>
+                <a href="https://www.bukovansky-mlyn.cz/" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>Restaurant in the forest</h3>
-            <p>Family friendly restaurant worth to visit. </p>
-            <a href="https://www.tripadvisor.com/Restaurant_Review-g13370609-d13948123-Reviews-Kamenacka_Myslivna-Moravany_South_Moravian_Region_Moravia.html" class="btn1">visit now</a>
-        </div>
-    </div>
-
-        <div class="box">
+        <div class="box" id="box2">
             <div class="image">
-            <img src="images/vinarna_skalak.jpg" alt="" srcset="">
+                <img src="images/kamenak_myslivna.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Restaurant in the forest</h3>
+                <p>Family friendly restaurant worth to visit.</p>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g13370609-d13948123-Reviews-Kamenacka_Myslivna-Moravany_South_Moravian_Region_Moravia.html" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>Wine cellar</h3>
-            <p>One of the best place to experience delicious wine, from South Moravia.</p>
-            <a href="https://sklepskalak.cz/" class="btn1">visit now</a>
-    </div>
-    </div>
 
-    <div class="box">
+
+        <div class="box" id="box3">
             <div class="image">
-            <img src="images/img-4.jpg" alt="" srcset="">
+                <img src="images/vinarna_skalak.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Winery and pension</h3>
+                <p>One Of The Best Place To Experience Delicious Wine, From South Moravia..</p>
+                <a href="https://sklepskalak.cz/" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
 
-    <div class="box">
+
+
+
+
+
+
+
+
+
+
+        <div class="box" id="box4">
             <div class="image">
-            <img src="images/img-5.jpg" alt="" srcset="">
+                <img src="images/Cimburk.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>"New castle" Cimburg</h3>
+                <p>The ruins of Castle Cimburk are under reconstruction, frequently hosting medieval events that are well worth seeing.</p>
+                <a href="https://cimburk.eu/" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
 
-    <div class="box">
+
+
+        <div class="box" id="box5">
             <div class="image">
-            <img src="images/img-6.jpg" alt="" srcset="">
+                <img src="images/Buchlov_1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Buchlov</h3>
+                <p>Step into a world of grandeur and mystery at Buchlov, where centuries-old architecture and captivating tales await your exploration.</p>
+                <a href="https://www.hrad-buchlov.cz/en" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
 
-    <div class="box">
+        <div class="box" id="box6">
             <div class="image">
-            <img src="images/img-7.jpg" alt="" srcset="">
+                <img src="images/Buchlovice_zamek.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Buchlovice</h3>
+                <p>Stroll through the breathtaking castle gardens, where vibrant flora and serene landscapes create a perfect harmony with the historic beauty of the castle.</p>
+                <a href="https://www.zamek-buchlovice.cz/en" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
 
-    <div class="box">
+
+
+
+
+        
+        <div class="box" id="box7">
             <div class="image">
-            <img src="images/img-8.jpg" alt="" srcset="">
+                <img src="images/Bucovice.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Bucovice</h3>
+                <p>Experience the beauty of Bucovice Castle in South Moravia, a stunning example of Italian Renaissance architecture with exquisite gardens.</p>
+                <a href="https://www.zamek-bucovice.cz/en" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
 
-    <div class="box">
+        <div class="box" id="box8">
             <div class="image">
-            <img src="images/img-9.jpg" alt="" srcset="">
+                <img src="images/Milotice.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Milotice</h3>
+                <p>Discover the elegance of Milotice Castle in South Moravia, a Baroque masterpiece surrounded by beautifully landscaped gardens.</p>
+                <a href="https://www.zamek-milotice.cz/en" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
 
-    <div class="box">
+        <div class="box" id="box9">
             <div class="image">
-            <img src="images/img-10.jpg" alt="" srcset="">
+                <img src="images/Ski_Osvetimany.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Ski areal Osvětimany</h3>
+                <p>Enjoy the thrill of winter sports at Ski Areal Osvětimany, South Moravia's premier destination for skiing and snowboarding.</p>
+                <a href="https://www.skiosvetimany.cz/" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
 
-    <div class="box">
+
+
+
+
+
+
+        <div class="box" id="box10">
             <div class="image">
-            <img src="images/img-11.jpg" alt="" srcset="">
+                <img src="images/Moravsky_kras.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Moravsky kras</h3>
+                <p>Embark on an adventure just an hour away to explore captivating caves filled with magic and bats. Discover an underground river and the breathtaking beauty of the region's most photogenic domestic abyss.</p>
+                <a href="https://moravsky-kras.caves.cz/" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
-    <div class="box">
+
+        <div class="box" id="box11">
             <div class="image">
-            <img src="images/img-12.jpg" alt="" srcset="">
+                <img src="images/kamenak_myslivna.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Restaurant in the forest</h3>
+                <p>Head to the Kazatelna viewpoint in Koryčany, in the Chřiby Mountains of South Moravia. This scenic spot features a rocky outcrop carved from sandstone and Magura flysch conglomerates. The natural monument sits atop an 8-meter-high cliff, crowned by a two-armed cross. Enjoy captivating vistas and breathtaking views.</p>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g13370609-d13948123-Reviews-Kamenacka_Myslivna-Moravany_South_Moravian_Region_Moravia.html" class="btn1">visit now</a>
+            </div>
         </div>
-        <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="book.php" class="btn1">book now</a>
-    </div>
-    </div>
-</div>
 
-<div class="load-more"><span class="btn">load more</span></div>
+        <div class="box" id="box12">
+            <div class="image">
+                <img src="images/Tipy.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Other tips</h3>
+                <p>Explore 'Other Tips' section for additional insights and recommendations to enhance your experience.</p>
+                <a href="https://www.slovacko.cz/en/" class="btn1">visit now</a>
+            </div>
+        </div>
+        <!-- Repeat for other images... -->
 
-</section>
+
+    </section>
+
+
+
+
+        <div class="load-more">
+            <span class="btn" id="loadMoreBtn">load more</span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- home packages section ends -->
@@ -247,40 +304,7 @@
 
 <section class="footer">
 
-    <div class="box-container">
-        <div class="box">
-            <h3>quick links</h3>
-        <a href="home.php"><i class="fas fa-angle-right"></i> home</a>
-        <a href="about.php"><i class="fas fa-angle-right"></i> about</a>
-        <a href="package.php"><i class="fas fa-angle-right"></i> package</a>
-        <a href="book.php"><i class="fas fa-angle-right"></i> book</a>
-        </div>
-    
-        <div class="box">
-            <h3>extra links</h3>
-        <a href="#"><i class="fas fa-angle-right"></i> ask questions</a>
-        <a href="#"><i class="fas fa-angle-right"></i> about us</a>
-        <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
-        <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-        <a href="#"><i class="fas fa-phone"></i> +420 728 123 456</a>
-        <a href="#"><i class="fas fa-phone"></i> +420 777 444 555</a>
-        <a href="#"><i class="fas fa-envelope"></i> sem@napis.email</a>
-        <a href="#"><i class="fas fa-map"></i> vresovice prdelakov 32</a>
-        </div>
-
-        <div class="box">
-            <h3>follow us</h3>
-            <a href='#'> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href='#'> <i class="fab fa-instagram"></i> instagram </a>
-            <a href='#'> <i class="fab fa-linkedin"></i> linkedIn </a>
-        </div>
-    </div>    
-
-    <div class="credit"> created by <span>Mr. web designer</span> | all right reserved!</div>
+    <div class="credit"> created by <span>Libor Zmelik web designer</span> | all right reserved!</div>
 
 </section>
 
@@ -288,7 +312,11 @@
 
 
 
-
+<!-- custom js file link -->
+<!--========== SCROLL UP ==========-->
+<a href="" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+ </a>
 
 
 
@@ -297,8 +325,57 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
+ <!--=============== SCROLLREVEAL ===============-->
+ <script src="assets/js/scrollreveal.min.js"></script>
 <!-- custom js file link -->
-<script src="js/script.js"></script>
+
+<script src="js/script_2.js"></script>
+
+
+
+
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const boxes = document.querySelectorAll('.box-container .box');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    let currentVisible = 6;
+
+    // Function to show boxes up to the currentVisible index
+    function showBoxes() {
+        boxes.forEach((box, index) => {
+            if (index < currentVisible) {
+                box.style.display = 'block';
+            } else {
+                box.style.display = 'none';
+            }
+        });
+    }
+
+    // Initially show the first 6 boxes
+    showBoxes();
+
+    loadMoreBtn.addEventListener('click', function () {
+        currentVisible += 3;
+        showBoxes();
+
+        // Hide the button if all boxes are visible
+        if (currentVisible >= boxes.length) {
+            loadMoreBtn.style.display = 'none';
+        }
+    });
+});
+
+
+
+</script>
+
+
+
+
+
 
 </body>
 </html>
