@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+:root{
+  --main-color:#8e44ad;
+  --black:#222;
+  --white:#fff;
+  --light-black:#777;
+  --light-white:#fff9;
+  --dark-bg:rgba(0,0,0,.7);
+  --light-bg:#eee;
+  --border:.1rem solid var(--black);
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+  --first_font:'Satisfy', cursive;
+  --second_font:font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +25,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
 /* Adjust body styles */
 body {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -50,17 +75,9 @@ body::after {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+.header {
+  position: absolute !important;
+}
 
 
 
@@ -173,6 +190,61 @@ section {
     transform: translate(0, 5%);
   }
   
+  .table_container {
+    background-image: url(../images/form_back.jpg);
+    position: relative;
+    height: 100%;
+    top: 50%;
+    margin: 1rem;
+    padding: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    overflow-x: auto;
+    border-collapse: collapse;
+
+    background-repeat: no-repeat;
+
+}
+
+
+  .section_1 {
+    z-index: 3;
+
+      box-sizing: border-box;
+      position: relative;
+      width: 100%;
+      background-size: cover;
+      margin-bottom: 1rem;
+      gap: 4rem;
+      
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+
+
+
+  .grid_1 {
+    gap: 1.5rem;
+    padding: 1.5rem;
+position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+
+
+
+
+
 
 
 
@@ -210,12 +282,41 @@ section {
 
 
 
+.section__title_1 {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #f1f2f598;
+  margin-bottom: 50px;
+  text-align: center;
 
+  backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+  padding: 20px;
+  border-radius: 10px;
+}
 
+.section__title_1 h2 {
+color: #FFF;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
 
+.section__title_1 p {
+  color: #FFF;
 
-
-
+  
+  }
+  
+  .section__title_2 {
+    color: #FFF;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #f1f2f598;
+}
 
 
 
@@ -287,7 +388,8 @@ section {
 }
 
 .header_1{
-  padding-top: 5rem;
+  padding-top: 10rem;
+
 }
 
 .contact-form {
@@ -401,4 +503,21 @@ section {
   .contact-form {
     width: 100%;
   }
+}
+
+
+
+
+
+@media (max-width: 750px) {
+.grid_1 {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 }
