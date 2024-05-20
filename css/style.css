@@ -158,9 +158,10 @@ html{
 
 }
 
-.header .logo a:hover {
+.header .logo:hover {
   color: green;
 }
+
 
 
 
