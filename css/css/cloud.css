@@ -1,0 +1,95 @@
+* {
+    font-family: 'Satisfy', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body {
+    overflow: hidden;
+}
+
+header {
+    height: 60px; /* Adjust this height according to your menu height */
+    background-color: #333; /* Example background color for the menu */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.container {
+    width: 100%;
+    margin-top: 0px; /* Add margin to account for the fixed header */
+}
+
+.container-1 {
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 2rem; /* Adjust padding if needed */
+    padding-bottom: 15rem;
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust height to be responsive */
+    min-height: 500px; /* Minimum height to ensure it doesn't shrink too much */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.cloud {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-end; /* Align clouds to the bottom */
+}
+
+.cloud img {
+    animation: cld calc(8s * var(--i)) linear infinite;
+    opacity: 0.6;
+    position: absolute;
+    height: 60%; /* Adjust the percentage according to your design */
+
+    bottom: 0; /* Positioning at the bottom */
+}
+
+@keyframes cld {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 1200px) {
+    .container-1 {
+        height: 70vh; /* Adjust height for medium screens */
+        min-height: 400px; /* Minimum height for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-1 {
+        height: 60vh; /* Adjust height for small screens */
+        min-height: 350px; /* Minimum height for small screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-1 {
+        height: 50vh; /* Adjust height for very small screens */
+        min-height: 300px; /* Minimum height for very small screens */
+    }
+}
