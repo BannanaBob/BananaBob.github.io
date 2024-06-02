@@ -57,65 +57,85 @@
 
 
 
-<section class="header" id="header">
+  <section class="header" id="header">
     <a href="index.html" class="logo">zelená vila</a>
-
     <nav class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-             <li class="nav__item"> 
+        <ul class="nav__list">
+            <li class="nav__item">
 
-
-                <div class="checkbox-wrapper-5">
-                    <div class="check" id="checkbox-container">
-                      <input checked="" id="check-5" type="checkbox">
-                      <label for="check-5"></label>
-                      <div class="bubble">English</div> <!-- New bubble element -->
-                    </div>
-                  </div>
-                  
-                </li>
-
-
-            <ul class="nav__list">
-                <li class="nav__item"> 
-             <div id="btn" class="fas fa-crow"></div>
+                
+                <div class="wrapper">
+                    <label class="switch">
+                        <input type="checkbox" id="checkbox-toggle" />
+                        <span class="slider">
+                            <div class="fish">
+                                <div class="body"></div>
+                                <div class="eye"></div>
+                                <div class="tail"></div>
+                            </div>
+                        </span>
+                        <span class="wave"> </span>
+                        <div class="boat">
+                            <div class="bottom"></div>
+                            <div class="mast"></div>
+                            <div class="rectangle-sm"></div>
+                            <div class="rectangle-lg"></div>
+                        </div>
+                        <div class="sky">
+                            <div class="sun">
+                                <div class="outer"></div>
+                                <div class="inner"></div>
+                            </div>
+                            <div class="cloud cloud1">
+                                <div class="rect"></div>
+                                <div class="circle circle-lg"></div>
+                                <div class="circle circle-sm"></div>
+                            </div>
+                            <div class="cloud cloud2">
+                                <div class="rect"></div>
+                                <div class="circle circle-lg"></div>
+                                <div class="circle circle-sm"></div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </li>
+            <li class="nav__item">
+                <div id="btn" class="fas fa-crow"></div>
                 <a href="index.html" class="nav__link1 active-link">home</a>
-             
+            </li>
+            <li class="nav__item">
+                <a href="about.html" class="nav__link1">about</a>
+            </li>
+            <li class="nav__item">
+                <a href="package.html" class="nav__link1">package</a>
             </li>
 
 
-             <li class="nav__item">
-                <a href="about.html" class="nav__link1">about</a>
-             </li>
 
-
-
-             <li class="nav__item"> <a href="package.html" class="nav__link1">package</a>
-             
-             </li>
-
-             <li class="nav__item">
-                <a href="#" class="nav__link1">galery<i class="fas fa-caret-down"></i></a>
-
+            <li class="nav__item">
+                <a href="#" class="nav__link1">gallery<i class="fas fa-caret-down"></i></a>
                 <div class="dropdown__menu">
-                   <ul>
-                      <li><a href="parallax.html">summer</a></li>
-                      <li><a href="parallax.html">winter</a></li>
-                   </ul>
+                    <ul>
+                        <li><a href="parallax.html">summer</a></li>
+                        <li><a href="parallax2.html">winter</a></li>
+                    </ul>
                 </div>
-             </li>
-
-             <li class="nav__item"> <a href="index.html#Price" class="nav__link1">Price</a> </li>
+            </li>
 
 
-             <li class="nav__item"> <a href="form.html" class="nav__link1">Kontakt</a> </li>
-          
-             </nav>
 
 
-       <div id="menu-btn" class="fas fa-bars"></div>
-       
-    </section>
+            <li class="nav__item">
+                <a href="index.html#Price" class="nav__link1">Price</a>
+            </li>
+            <li class="nav__item">
+                <a href="form.html" class="nav__link1">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</section>
 
 <!--==================== HEADER END ====================-->
 
@@ -253,6 +273,8 @@
 
         </div>
 
+
+        
         <div class="box-container">
         <div class="box">
             <img src="images/icon-4.png">
@@ -422,145 +444,102 @@
  <!--  <script src="js/script.js"></script>-->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
  <script>
- document.addEventListener("DOMContentLoaded", function() {
-    var checkbox = document.getElementById("check-5");
-    
-    checkbox.addEventListener("click", function() {
-      // Simulate a delay to ensure the animation completes
-      setTimeout(function() {
-        // Directly navigate to the next page
-        window.location.href = "index.html";
-      }, 1000); // Adjust the delay to match your animation duration
+    document.addEventListener("DOMContentLoaded", function() {
+        const toggle = document.querySelector('.toggle');
+        const menu = document.querySelector('#menu-btn');
+        const navbar = document.querySelector('.header .nav__menu');
+        const loadMoreBtn = document.querySelector('.packages .load-more .btn');
+        let currentItem = 3;
+
+        if (toggle) {
+            toggle.addEventListener('click', function() {
+                setTimeout(function() {
+                    window.location.href = 'index.html';
+                }, 1900); // Adjust the delay based on your animation duration
+            });
+        }
+
+        if (menu && navbar) {
+            menu.addEventListener('click', function() {
+                menu.classList.toggle('fa-times');
+                navbar.classList.toggle('active');
+            });
+        }
+
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', function() {
+                let boxes = document.querySelectorAll('.packages .box-container .box');
+                for (let i = currentItem; i < Math.min(currentItem + 3, boxes.length); i++) {
+                    boxes[i].style.display = 'inline-block';
+                }
+                currentItem += 3;
+                if (currentItem >= boxes.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', function() {
+            const scrollUpBtn = document.getElementById('scroll-up');
+            if (scrollUpBtn) {
+                this.scrollY >= 350 ? scrollUpBtn.classList.add('show-scroll')
+                                    : scrollUpBtn.classList.remove('show-scroll');
+            }
+
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 58;
+                const sectionId = current.getAttribute('id');
+                const sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+
+                if (sectionsClass) {
+                    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                        sectionsClass.classList.add('active-link');
+                    } else {
+                        sectionsClass.classList.remove('active-link');
+                    }
+                }
+            });
+        });
+
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 3000,
+            delay: 400,
+        });
+
+        sr.reveal('.home__data, .explore__data, .explore__user, .footer__container,');
+        sr.reveal('.home__card', {delay: 600, distance: '100px', interval: 100});
+        sr.reveal('.join__image, .container1', {origin: 'right', distance: '300px'});
+        sr.reveal('.about__image, .container', {origin: 'left', distance: '300px'});
+        sr.reveal('.popular__card', {interval: 200});
+
+        var swiper = new Swiper(".home-slider", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     });
-  });
-  </script>
-
-
-      <script>
-      /*=============== SCROLL REVEAL ANIMATION ===============*/
-      const sr = ScrollReveal({
-          origin: 'top',
-          distance: '60px',
-          duration: 3000,
-          delay: 400,
-          // reset: true // animation repeat
-      })
-      
-      sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
-      sr.reveal(`.home__card`, {delay: 600, distance: '100px', interval: 100})
-      sr.reveal(`.join__image, .container1`, {origin: 'right' , distance: '300px'})
-      sr.reveal(`.about__image, .container`, {origin: 'left' , distance: '300px'})
-      sr.reveal(`.popular__card`, {interval: 200})
-      
-
-
-
-window.onscroll = () =>{
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
-}
-
-var swiper = new Swiper(".home-slider", {
-    loop:true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-});
-
-
-let loadMoreBtn = document.querySelector('.packages .load-more .btn');
-let currentItem = 3;
-
-loadMoreBtn.onclick = () => {
-    let boxes = document.querySelectorAll('.packages .box-container .box');
-    for (let i = currentItem; i < Math.min(currentItem + 3, boxes.length); i++) {
-        boxes[i].style.display = 'inline-block';
-    }
-    currentItem += 3;
-    if (currentItem >= boxes.length) {
-        loadMoreBtn.style.display = 'none';
-    }
-}
-
 </script>
-
-<script>
-
-let menu = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.header .nav__menu');
-
-menu.onclick = () =>{
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-}
-
-</script>
-
-
-<script>
-
-
- /*=============== SHOW SCROLL UP ===============*/ 
-const scrollUp = () =>{
-	const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-						: scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
-
-    </script>
-      
-      
-      
-      
-
-
-
-
-
-
-    <script>
-
-      
-      /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-      const sections = document.querySelectorAll('section[id]')
-          
-      const scrollActive = () =>{
-            const scrollY = window.pageYOffset
-      
-          sections.forEach(current =>{
-              const sectionHeight = current.offsetHeight,
-                    sectionTop = current.offsetTop - 58,
-                    sectionId = current.getAttribute('id'),
-                    sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-      
-              if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-                  sectionsClass.classList.add('active-link')
-              }else{
-                  sectionsClass.classList.remove('active-link')
-              }                                                    
-          })
-      }
-      window.addEventListener('scroll', scrollActive)
-      
-      
-    </script>
-
-      
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
