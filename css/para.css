@@ -649,28 +649,30 @@ color: green;
 
 
 
-      .header .nav__menu {
-          position: absolute;
-          top: 99%;
-          /* left: 0; */
-          right: 0;
-          background-color: var(--white);
-          border-top: var(--border);
-          padding: 2rem;
-          transition: 0.4s linear;
-          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-          width: 50vw;
-          text-align: center;
-          display: flex;
-          flex-wrap: nowrap;
-          align-content: center;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          max-height: 90vh;
-          overflow-y: auto;
-      }
-  
+    .header .nav__menu {
+      position: absolute;
+      top:99%; 
+      /*left:0; */
+      right:0;
+      background-color: var(--white);
+      border-top: var(--border);
+      padding: 2rem;
+      transition: 0.4s linear;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      width: 50vw;
+
+      text-align: center;
+      display: flex;
+      flex-wrap: nowrap;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+padding-top: 6rem;
+      max-height: 80vh; /* Set maximum height */
+      overflow-y: auto; /* Enable vertical scrolling */
+  }
+
 
 
     .header .nav__menu.active{
@@ -678,6 +680,34 @@ color: green;
 
     }
 
+
+    .header .nav__menu a{
+      display: block;
+      margin: 2rem;
+      text-align: center;
+  }
+
+
+
+  .nav__list {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.5rem;
+    margin-top: 20rem;
+    max-width: 250px;
+  
+    }
+
+
+    .wrapper {
+      bottom: 10px !important;
+      left: 35px !important;
+  }
 
 
   }

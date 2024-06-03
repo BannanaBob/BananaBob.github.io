@@ -671,6 +671,7 @@ html{
     line-height: 2;
     color: var(--black);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px #0a0a0af6;
 }
 
 .home-packages {
@@ -835,8 +836,9 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+padding-top: 6rem;
 
-        max-height: 90vh; /* Set maximum height */
+        max-height: 80vh; /* Set maximum height */
         overflow-y: auto; /* Enable vertical scrolling */
     }
 
@@ -875,12 +877,6 @@ html{
       max-width: 250px;
     
       }
-
-
-
-
-
-
 
 
 
