@@ -1481,14 +1481,19 @@ padding-top: 6rem;
   padding-top: 3rem;
   margin-top: 3rem;
   border-top: 0.1rem solid var(--light-white);
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--white);
-  font-family: fantasy, Kalam, "sans-serif";
+  font-family: var(--third_font);
+
+  font-weight: 700;
+
 }
 
 .footer .credit span {
     color: var(--main-color);
-    font-family: fantasy, Kalam, "sans-serif";
+    font-family: var(--third_font);
+font-weight: 700;
+    font-size: 3rem;
   }
 
 
