@@ -10,17 +10,41 @@ menu.onclick = () =>{
 
 
 
+    //switch to CZ, or EN
+
       document.addEventListener("DOMContentLoaded", function() {
-        var checkbox = document.getElementById("check-5");
+        var checkbox = document.getElementById("checkbox-toggle_EN");
         
         checkbox.addEventListener("click", function() {
           // Simulate a delay to ensure the animation completes
           setTimeout(function() {
             // Directly navigate to the next page
-            window.location.href = "index.html";
+            window.location.href = "index_EN.html";
           }, 1000); // Adjust the delay to match your animation duration
         });
       });
+
+ //switch to CZ, or EN
+
+ document.addEventListener("DOMContentLoaded", function() {
+  var checkbox = document.getElementById("checkbox-toggle_CZ");
+  
+  checkbox.addEventListener("click", function() {
+    // Simulate a delay to ensure the animation completes
+    setTimeout(function() {
+      // Directly navigate to the next page
+      window.location.href = "index.html";
+    }, 1000); // Adjust the delay to match your animation duration
+  });
+});
+
+
+
+
+
+
+
+
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
@@ -51,3 +75,6 @@ sr.reveal(`.popular__card`, {interval: 200})
                         : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+

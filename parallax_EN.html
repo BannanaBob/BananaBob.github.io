@@ -20,19 +20,28 @@
 
 <!-- font awesome cdn link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+<!--=============== REMIXICONS ===============-->
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-<link rel="stylesheet" href="css/cloud.css">
-    <link rel="stylesheet" href="css/para.css">
+<!-- font awesome cdn link -->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+
+    <link rel="stylesheet" href="css/para.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <script src="js/lightbox-plus-jquery.min.js"></script>
 
 
 </head>
 <body>
-
-
 
 
 <!--==================== LOADING SCREEN ====================-->
@@ -73,20 +82,19 @@
 
 
 
-<!-- header section starts -->
+
 <!--==================== HEADER ====================-->
 
-
 <section class="header" id="header">
-    <a href="index.html" class="logo">zelená vila</a>
+    <a href="index_EN.html" class="logo">zelená vila</a>
     <nav class="nav__menu" id="nav-menu">
         <ul class="nav__list">
             <li class="nav__item">
-  
+
                 
                 <div class="wrapper">
                     <label class="switch">
-                        <input type="checkbox" id="checkbox-toggle_EN" />
+                        <input type="checkbox" id="checkbox-toggle_CZ" />
                         <span class="slider">
                             <div class="fish">
                                 <div class="body"></div>
@@ -118,49 +126,46 @@
                             </div>
                         </div>
                     </label>
-                    <p class="text-under-toggle">English</p>
+                    <p class="text-under-toggle">česky</p>
 
                 </div>
             </li>
-  
-            
             <li class="nav__item">
                 <div id="btn" class="fas fa-crow"></div>
-                <a href="index.html" class="nav__link1 active-link">úvod</a>
+                <a href="index_EN.html" class="nav__link1 active-link">home</a>
             </li>
             <li class="nav__item">
-                <a href="about.html" class="nav__link1">o nás</a>
+                <a href="about_EN.html" class="nav__link1">about</a>
             </li>
             <li class="nav__item">
-                <a href="package.html" class="nav__link1">doporučujeme</a>
+                <a href="package_EN.html" class="nav__link1">recomendation</a>
             </li>
-  
-  
-  
+
+
+
             <li class="nav__item">
-                <a href="#" class="nav__link1">galerie<i class="fas fa-caret-down"></i></a>
+                <a href="#" class="nav__link1">gallery<i class="fas fa-caret-down"></i></a>
                 <div class="dropdown__menu">
                     <ul>
-                        <li><a href="parallax.html">léto</a></li>
-                        <li><a href="parallax2.html">zima</a></li>
+                        <li><a href="parallax_EN.html">summer</a></li>
+                        <li><a href="parallax2_EN.html">winter</a></li>
                     </ul>
                 </div>
             </li>
-  
-  
-  
-  
+
+
+
+
             <li class="nav__item">
-                <a href="index.html#Price" class="nav__link1">cena</a>
+                <a href="index_EN.html#Price" class="nav__link1">Price</a>
             </li>
             <li class="nav__item">
-                <a href="form.html" class="nav__link1">kontakt</a>
+                <a href="form_EN.html" class="nav__link1">Kontakt</a>
             </li>
         </ul>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
-  </section>
-  
+</section>
 
 <!--==================== HEADER END ====================-->
 
@@ -170,28 +175,21 @@
 
 
 
-  <div class="container">
-
-    <div class="container-1" style="background:url(images/Forest-picture.jpg) no-repeat">
-
-        <div class="cloud99">
-
-            <img src="images\cloud1.png" alt="" style="--i:1"> 
-            <img src="images\cloud2.png" alt="" style="--i:2">
-            <img src="images\cloud3.png" alt="" style="--i:3">
-            <img src="images\cloud4.png" alt="" style="--i:4">
-            <img src="images\cloud5.png" alt="" style="--i:5">
-        </div>
-        </div>
-    </div>
 
 
 
+
+
+<section class="parallax">
+    <img src="images/parallax/first.jpg" id="first">
+    <img src="images/parallax/hawk.png" id="hawk", style= "width: 10%;height: 10%";>
+    <img class="last_img" src="images/parallax/Last2_1.png" id="last">
+    <h1 id="text">New adwenture</h1>
+</section>
 
 <div class="ab-text">
-
     <div class="heading">
-        <h2>Photography</h2>
+        <h2 >Photography</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
              suscipit corrupti officia aut, esse voluptas harum. <br> Corrupti facere praesentium, ullam quae sed pariatur optio dolore, explicabo illum tempore, impedit molestias.</p>
     
@@ -233,13 +231,11 @@
         </div>
 
 
-
-
 <!-- custom js file link -->
 <!--========== SCROLL UP ==========-->
 <a href="" class="scrollup" id="scroll-up">
-  <i class="ri-arrow-up-line"></i>
-</a>
+    <i class="ri-arrow-up-line"></i>
+ </a>
 
 
 
@@ -256,48 +252,59 @@
 
 
 
+
+<script>
+    let first = document.getElementById("first");
+    let hawk = document.getElementById("hawk");
+    let last = document.getElementById("last");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        first.style.top = value * 0.7 + 'px';
+        hawk.style.left = value * -0.6 + 'px';
+        last.style.bottom = value * 0.5 + 'px';
+        text.style.top = value * 1 + 'px';
+
+
+
+    })
+
+</script>
+
+
+
+
 <!-- swiper js link -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
-
 <!-- custom js file link -->
 
+<!--=============== SCROLLREVEAL ===============-->
 
 
-
+<script src="js/scrollreveal.min.js"></script>
 <script src="js/script_3.js"></script>
 
 
 
- 
-
-
-<!-- Lnovyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyr 
-    https://lokeshdhakar.com/projects/lightbox2
 
 <script>
-  document.addEventListener("mousemove", function(e) {
-      const layers = document.querySelectorAll('.parallax-layer');
-      const w = window.innerWidth / 2;
-      const h = window.innerHeight / 2;
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-  
-      layers.forEach(layer => {
-          const depth = parseFloat(layer.getAttribute('data-depth'));
-          const initialTop = parseInt(layer.style.top, 10) || 0; // Get initial top value, default to 0 if not set
-          const initialLeft = parseInt(layer.style.left, 10) || 0; // Get initial left value
-          const finalX = initialLeft + (mouseX - w) * depth;
-          const finalY = initialTop + (mouseY - h) * depth;
-          
-          layer.style.transform = `translate(${finalX}px, ${finalY}px)`;
-          layer.style.zIndex = parseInt(1/depth); // Setting z-index based on depth (smaller depth means larger z-index)
-      });
-  });
-  </script>
-https://lokeshdhakar.com/projects/lightbox2
--->
+
+
+    /*=============== SHOW SCROLL UP ===============*/ 
+   const scrollUp = () =>{
+       const scrollUp = document.getElementById('scroll-up')
+       // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+       this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                           : scrollUp.classList.remove('show-scroll')
+   }
+   window.addEventListener('scroll', scrollUp)
+   
+   
+       </script>
 
 
 
