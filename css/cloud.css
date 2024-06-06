@@ -23,6 +23,7 @@ header {
     z-index: 10;
 }
 
+/* Styles for clouds */
 .container {
     width: 100%;
     margin-top: 0px; /* Add margin to account for the fixed header */
@@ -59,7 +60,6 @@ header {
     opacity: 0.6;
     position: absolute;
     height: 60%; /* Adjust the percentage according to your design */
-
     bottom: 0; /* Positioning at the bottom */
 }
 

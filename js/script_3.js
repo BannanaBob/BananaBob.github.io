@@ -14,23 +14,44 @@ document.addEventListener("DOMContentLoaded", function() {
             clearInterval(loadingInterval);
             loadingScreen.style.display = 'none';
             content.style.display = 'block';
+
+            // Start cloud animation
+            startCloudAnimation();
         }
-    }, 40); // Adjust the interval speed as needed
+    }, 30); // Adjust the interval speed as needed
 });
+
+function startCloudAnimation() {
+    var clouds = document.querySelectorAll('.cloud99 img');
+    clouds.forEach(function(cloud) {
+        cloud.style.animationPlayState = 'running';
+    });
+}
 
 // Ensure the loading screen is displayed when the page starts loading
 window.onload = function() {
     var loadingScreen = document.getElementById('loading-screen');
     var content = document.getElementById('content');
-    
+
     if (loadingScreen.style.display === 'none') {
         loadingScreen.style.display = 'flex';
     }
-    
+
     if (content.style.display === 'block') {
         content.style.display = 'none';
     }
 };
+
+
+
+
+
+
+
+
+
+
+
 
 
   
