@@ -1,27 +1,36 @@
 
-
-////////////////// LOADING SCREEN //////////////////////////////
-
 document.addEventListener("DOMContentLoaded", function() {
     var loadingScreen = document.getElementById('loading-screen');
     var loadingPercentage = document.getElementById('loading-percentage');
     var content = document.getElementById('content');
-  
+
     // Simulate loading process
     var percentage = 0;
     var loadingInterval = setInterval(function() {
         percentage += 1;
         loadingPercentage.textContent = percentage + '%';
-        
+
         if (percentage >= 100) {
             clearInterval(loadingInterval);
             loadingScreen.style.display = 'none';
             content.style.display = 'block';
         }
-    }, 30); // Adjust the interval speed as needed
-  });
-  
+    }, 40); // Adjust the interval speed as needed
+});
 
+// Ensure the loading screen is displayed when the page starts loading
+window.onload = function() {
+    var loadingScreen = document.getElementById('loading-screen');
+    var content = document.getElementById('content');
+    
+    if (loadingScreen.style.display === 'none') {
+        loadingScreen.style.display = 'flex';
+    }
+    
+    if (content.style.display === 'block') {
+        content.style.display = 'none';
+    }
+};
 
 
   
