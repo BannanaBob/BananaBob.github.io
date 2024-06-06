@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
-
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Julee&family=Style+Script&display=swap');
 
 
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Julee&family=Sedgwick+Ave&family=Style+Script&display=swap');
 :root{
     --main-color:#8e44ad;
     --black:#222;
@@ -24,6 +26,11 @@
     --first_font: "Amatic SC", sans-serif;
     --second_font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
     --third_font: "Amatic SC", sans-serif;
+    --fourth_font: "Alumni Sans", sans-serif;
+    --fift_font: "Style Script", cursive;
+    --sixt_font: "Sedgwick Ave", cursive;
+
+
  }
 
 * {
@@ -31,7 +38,7 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize; 
+    text-transform: none; 
 }
 
 /*--------scroll bar---------*/
@@ -113,8 +120,14 @@ html{
     font-size: 1.7rem;
     padding: 1rem 3rem;
     cursor: pointer;
-    font-family: fantasy, Kalam, "sans-serif";
     text-transform: uppercase;
+
+
+    line-height: 2;
+    font-family: var(--fourth_font);
+  
+    font-weight: 400;
+    font-style: normal;
 }
 
 .btn {
@@ -125,12 +138,21 @@ html{
     font-size: 1.7rem;
     padding: 1rem 3rem;
     cursor: pointer;
-    font-family: fantasy, "Kalam", "sans-serif";
     text-transform: uppercase;
+
+    line-height: 2;
+    font-family: var(--fourth_font);
+  
+    font-weight: 400;
+    font-style: normal;
 }
 
 .btn:hover{
     color: var(--main-color);
+}
+
+.btn1:hover{
+  color: var(--main-color);
 }
 
  @keyframes fadeIn {
@@ -478,12 +500,16 @@ html{
 /*--------animace fadeIn nadpisu---------*/
 .home .slide .content span{
     display: block;
-    font-family: fantasy, Kalam, "sans-serif";
-    font-size: 2.5rem;
+    font-family: var(--fift_font);
+    font-size: 3.5rem;
     color: rgb(255, 255, 255);
     text-shadow: var(--text-shadow);
     padding-bottom: 1rem;
     animation: fadeIn 0.4s linear backwards 0.2s;
+
+
+    font-weight: 400;
+  font-style: normal;
 }
 
 .home .slide .content h3 {
@@ -690,7 +716,10 @@ html{
 .home-about .content h3 {
     font-size: 3.5rem;
     color: var(--black);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--sixt_font);
+    font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .home-about .content p {
@@ -747,8 +776,14 @@ html{
 }
 
 .home-packages .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color:var(--black);
+  font-size: 2.5rem;
+  color: var(--black);
+  background-color: rgba(26, 88, 33, 0.838);
+  line-height: 2;
+  color: var(--black);
+  font-family: var(--third_font);
+  font-weight: 700;
+  font-style: normal;
 
 }
 
@@ -830,7 +865,10 @@ html{
 .about .content h3 {
     font-size: 3.5rem;
     color: var(--black);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--sixt_font);
+    font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .about .content p {
@@ -1556,6 +1594,13 @@ font-weight: 700;
 .packages .box-container .box .content h3 {
   font-size: 2.5rem;
   color: var(--black);
+background-color: rgba(26, 88, 33, 0.838);
+
+  line-height: 2;
+    color: var(--black);
+    font-family: var(--third_font);
+    font-weight: 700;
+    font-style: normal;
 }
 
 .packages .box-container .box .content p {
@@ -2837,7 +2882,9 @@ input{
 }
 .heading-title{
     font-size: 3.5rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--sixt_font);
+    font-weight: 400;
+  font-style: normal;
 
 }
     
