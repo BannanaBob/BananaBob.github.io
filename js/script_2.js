@@ -20,7 +20,7 @@ menu.onclick = () =>{
           setTimeout(function() {
             // Directly navigate to the next page
             window.location.href = "index_EN.html";
-          }, 1000); // Adjust the delay to match your animation duration
+          }, 2500); // Adjust the delay to match your animation duration
         });
       });
 
@@ -34,7 +34,7 @@ menu.onclick = () =>{
     setTimeout(function() {
       // Directly navigate to the next page
       window.location.href = "index.html";
-    }, 1000); // Adjust the delay to match your animation duration
+    }, 2500); // Adjust the delay to match your animation duration
   });
 });
 
