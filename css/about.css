@@ -350,8 +350,8 @@
     height: var(--size);
     cursor: pointer;
     --g: linear-gradient(#181818 0 0) no-repeat;
-    background: var(--g) 50%/var(--b,0%) 3px, var(--g) 50%/3px var(--b,0%);
-    transition: 1.5s;
+    background: var(--g) 50%/var(--b, 0%) 3px, var(--g) 50%/3px var(--b, 0%);
+    transition: transform 1.5s, background 1.5s; /* Add specific transitions */
     -webkit-appearance: none; /* Remove default Safari styles */
     -moz-appearance: none; /* Remove default Firefox styles */
     appearance: none; /* Remove default styles for other browsers */
@@ -370,7 +370,11 @@
     }
 }
 
-
+.gallery > input:checked {
+    transform: translate(-50%, calc(1.75 * var(--size) - 50%)) scale(0.5) rotate(225deg); /* Adjust transform to keep centered */
+    transform-origin: center; /* Ensure the transformation origin is centered */
+    --b: 70%; /* Adjust background size */
+}
 
 
 /* Img:hover */
