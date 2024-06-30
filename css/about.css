@@ -371,7 +371,7 @@
 }
 
 .gallery > input:checked {
-    transform: translate(-50%, calc(1.75 * var(--size) - 50%)) scale(0.5) rotate(225deg); /* Adjust transform to keep centered */
+    transform: translate(-50%, calc(1.90 * var(--size) - 50%)) scale(0.5) rotate(225deg); /* Adjust transform to keep centered */
     transform-origin: center; /* Ensure the transformation origin is centered */
     --b: 70%; /* Adjust background size */
 }
