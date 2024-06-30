@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     var loadingScreen = document.getElementById('loading-screen');
     var loadingPercentage = document.getElementById('loading-percentage');
@@ -27,21 +26,6 @@ function startCloudAnimation() {
         cloud.style.animationPlayState = 'running';
     });
 }
-
-// Ensure the loading screen is displayed when the page starts loading
-window.onload = function() {
-    var loadingScreen = document.getElementById('loading-screen');
-    var content = document.getElementById('content');
-
-    if (loadingScreen.style.display === 'none') {
-        loadingScreen.style.display = 'flex';
-    }
-
-    if (content.style.display === 'block') {
-        content.style.display = 'none';
-    }
-};
-
 
 
 
