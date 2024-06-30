@@ -1339,17 +1339,8 @@ html{
     }
         .map h1 {
         font-size: 3rem;
-        color: var(--black);   
         margin-bottom: 4rem;
-        font-weight: bold;
-        top: 3rem;
-        left: 3rem;
-        text-transform: capitalize;
-        position: relative;
         display: flex;
-        align-items:center;
-        text-align: center;
-        margin-top: 3rem;
         }
 
         .map p {
