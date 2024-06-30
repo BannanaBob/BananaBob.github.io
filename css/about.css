@@ -545,10 +545,10 @@
     pointer-events: initial;
   }
  
-.gallery > input:checked {
-    transform: translateY(calc(1.75 * var(--size))) scale(0.5) rotate(225deg); /* Adjust translateY value */
-    transform-origin: center; /* Ensure the transformation origin is centered */
-    --b: 70%; /* Adjust background size */
-}
+ .gallery > input:checked {
+    transform: translateY(calc(1.75*var(--s))) scale(.5) rotate(225deg);
+    --b: 70%;
+  }
+  
   
   
