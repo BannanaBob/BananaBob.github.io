@@ -1173,7 +1173,7 @@ padding-top: 6rem;
 
 .map h1 {
     font-size: 3.5rem;
-    color: var(--black);   
+    color: var(--black);  
     margin-bottom: 4rem;
     top: 3rem;
     padding: 2rem;
@@ -1194,12 +1194,10 @@ padding-top: 6rem;
 .map .link p {
     padding-left: 5rem;
     text-align: center;;
-    font-size: 2rem;
-    color: var(--light-black);
+    font-size: 2.5rem;
+    color: var(--black);
     line-height: 2;
-    padding: 1rem;
-    text-shadow: 1px 1px #0c101d5e;
-	
+    padding: 1rem;	
     font-family: var(--third_font);
     font-weight: 700;
     font-style: normal;
