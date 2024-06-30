@@ -345,13 +345,20 @@
     inset: calc(50% - var(--s)/3);
     cursor: pointer;
     --g: linear-gradient(#181818 0 0) no-repeat;
-    background: var(--g) 50%/var(--b,0%) 3px,var(--g) 50%/3px var(--b,0%);
+    background: var(--g) 50%/var(--b,0%) 3px, var(--g) 50%/3px var(--b,0%);
     transition: 1.5s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
+    -webkit-appearance: none; /* Ensure no default styles from Safari */
+    -moz-appearance: none; /* Ensure no default styles from Firefox */
+    appearance: none; /* Ensure no default styles from other browsers */
+    outline: none; /* Remove outline on focus */
+}
 
+/* Vendor prefix for Safari */
+@supports (-webkit-appearance: none) {
+    .gallery input {
+        -webkit-appearance: none;
+    }
+}
 /* Img:hover */
   #myImg1:hover {
     opacity: 0.9;
