@@ -1172,19 +1172,21 @@ padding-top: 6rem;
 
 
 .map h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--black);   
     margin-bottom: 4rem;
-    font-weight: bold;
     top: 3rem;
     left: 3rem;
-    text-transform: capitalize;
     position: relative;
     display: flex;
     align-items:center;
     text-align: center;
     margin-top: 3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    font-family: var(--sixt_font);
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
 
 
 }
@@ -1404,18 +1406,10 @@ padding-top: 6rem;
 
         .map h1 {
         font-size: 3rem;
-        color: var(--black);   
         margin-bottom: 4rem;
-        font-weight: bold;
         top: 3rem;
         left: 3rem;
-        text-transform: capitalize;
-        position: relative;
-        display: flex;
-        align-items:center;
-        text-align: center;
-        margin-top: 3rem;
-        font-family: var(--second_font);
+        
         }
     
         .map p {
@@ -1445,17 +1439,6 @@ padding-top: 6rem;
     }
         .map h1 {
         font-size: 3rem;
-        color: var(--black);   
-        margin-bottom: 4rem;
-        font-weight: bold;
-        top: 3rem;
-        left: 3rem;
-        text-transform: capitalize;
-        position: relative;
-        display: flex;
-        align-items:center;
-        text-align: center;
-        margin-top: 3rem;
         }
 
         .map p {
@@ -2814,7 +2797,9 @@ input{
 
   .modal {
     width: 80% !important;
-    left: 3% !important;
+    left: 10% !important;
+    height: 70% !important; 
+
   }
 
   .about_pic {
@@ -2849,7 +2834,9 @@ input{
 
    .modal {
     width: 80% !important;
-    left: 3% !important;
+    left: 5% !important;
+    height: 50% !important;
+
   }
 
   .gallery {
@@ -2891,62 +2878,6 @@ input{
 
 }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
