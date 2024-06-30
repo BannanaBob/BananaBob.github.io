@@ -338,21 +338,35 @@
     padding: 1rem;
 }
   
+    
+.gallery input {
+  position: absolute;
+  border: 2px solid #1c1b1b;
+  border-radius: 50%;
+  top: calc(50% - var(--size)/2); /* Center vertically */
+  left: calc(50% - var(--size)/2); /* Center horizontally */
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  --g: linear-gradient(#181818 0 0) no-repeat;
+  background: var(--g) 50%/var(--b,0%) 3px, var(--g) 50%/3px var(--b,0%);
+  transition: 1.5s;
+  -webkit-appearance: none; /* Remove default Safari styles */
+  -moz-appearance: none; /* Remove default Firefox styles */
+  appearance: none; /* Remove default styles for other browsers */
+  outline: none; /* Remove outline on focus */
+}
+
+/* Example of setting size */
+.gallery {
+  --size: 70px; /* Adjust size as needed */
+}
+
+/* Vendor prefixes for appearance */
+@supports (-webkit-appearance: none) {
   .gallery input {
-    position: absolute;
-    border: 2px solid #1c1b1b;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    --g: linear-gradient(#181818 0 0) no-repeat;
-    background: var(--g) 50%/var(--b,0%) 3px, var(--g) 50%/3px var(--b,0%);
-    transition: 1.5s;
-    -webkit-appearance: none; /* Remove default Safari styles */
-    -moz-appearance: none; /* Remove default Firefox styles */
-    appearance: none; /* Remove default styles for other browsers */
-    outline: none; /* Remove outline on focus */
+      -webkit-appearance: none;
+  }
 }
 
 
