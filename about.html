@@ -401,123 +401,52 @@
 
 
 
-      <script>
-         // Get the modal 1
-         var modal1 = document.getElementById("myModal1");
-         
-         // Get all images for modal 1
-         var images1 = document.querySelectorAll('[id^="myImg1"]');
-         var modalImg1 = document.getElementById("img01");
-         var captionText1 = document.getElementById("caption");
-         
-         // Loop through each image for modal 1
-         images1.forEach(function(img) {
-           img.onclick = function(){
-             modal1.style.display = "block";
-             modalImg1.src = this.src;
-             captionText1.innerHTML = this.alt;
-           }
-         });
-         
-         // Get the <span> element that closes modal 1
-         var span1 = document.getElementsByClassName("close")[0];
-         span1.onclick = function() {
-           modal1.style.display = "none";
-         }
-         
-         // Close modal 1 when clicking outside of the modal content
-         window.onclick = function(event) {
-           if (event.target === modal1) {
-             modal1.style.display = "none";
-           }
-         }
-         
-         // Get the modal 2
-         var modal2 = document.getElementById("myModal2");
-         
-         // Get all images for modal 2
-         var images2 = document.querySelectorAll('[id^="myImg2"]');
-         var modalImg2 = document.getElementById("img02");
-         var captionText2 = document.getElementById("caption2");
-         
-         // Loop through each image for modal 2
-         images2.forEach(function(img) {
-           img.onclick = function(){
-             modal2.style.display = "block";
-             modalImg2.src = this.src;
-             captionText2.innerHTML = this.alt;
-           }
-         });
-         
-         // Get the <span> element that closes modal 2
-         var span2 = document.getElementsByClassName("close")[1];
-         span2.onclick = function() {
-           modal2.style.display = "none";
-         }
-         
-         // Close modal 2 when clicking outside of the modal content
-         window.onclick = function(event) {
-           if (event.target === modal2) {
-             modal2.style.display = "none";
-           }
-         }
-         
-         // Get the modal 3
-         var modal3 = document.getElementById("myModal3");
-         
-         // Get all images for modal 3
-         var images3 = document.querySelectorAll('[id^="myImg3"]');
-         var modalImg3 = document.getElementById("img03");
-         var captionText3 = document.getElementById("caption3");
-         
-         // Loop through each image for modal 3
-         images3.forEach(function(img) {
-           img.onclick = function(){
-             modal3.style.display = "block";
-             modalImg3.src = this.src;
-             captionText3.innerHTML = this.alt;
-           }
-         });
-         
-         // Get the <span> element that closes modal 3
-         var span3 = document.getElementsByClassName("close")[2];
-         span3.onclick = function() {
-           modal3.style.display = "none";
-         }
-         
-         // Close modal 3 when clicking outside of the modal content
-         window.onclick = function(event) {
-           if (event.target === modal3) {
-             modal3.style.display = "none";
-           }
-         }
-         
-         // Close all modals when clicking on the modal content (image or caption)
-         modalImg1.onclick = function() {
-           modal1.style.display = "none";
-         }
-         
-         captionText1.onclick = function() {
-           modal1.style.display = "none";
-         }
-         
-         modalImg2.onclick = function() {
-           modal2.style.display = "none";
-         }
-         
-         captionText2.onclick = function() {
-           modal2.style.display = "none";
-         }
-         
-         modalImg3.onclick = function() {
-           modal3.style.display = "none";
-         }
-         
-         captionText3.onclick = function() {
-           modal3.style.display = "none";
-         }
+      
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+     function isSafariOrFirefox() {
+        return /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || typeof InstallTrigger !== 'undefined';
+     }
+  
+     if (isSafariOrFirefox()) {
+        document.querySelectorAll('.original-button').forEach(function(btn) {
+           btn.style.display = 'none';
+        });
+        document.querySelectorAll('.safari-firefox-button').forEach(function(btn) {
+           btn.style.display = 'block';
+        });
+     }
+     
+     // Handle modal for all images
+     var modal1 = document.getElementById("myModal1");
+     var modal2 = document.getElementById("myModal2");
+     var modal3 = document.getElementById("myModal3");
+  
+     var images = document.querySelectorAll('.gallery-img');
+     var modals = [modal1, modal2, modal3];
+     var modalImgs = [document.getElementById("img01"), document.getElementById("img02"), document.getElementById("img03")];
+     var captions = [document.getElementById("caption"), document.getElementById("caption2"), document.getElementById("caption3")];
+  
+     images.forEach(function(img, index) {
+        img.onclick = function() {
+           var modal = modals[Math.floor(index / 9)];
+           var modalImg = modalImgs[Math.floor(index / 9)];
+           var caption = captions[Math.floor(index / 9)];
+           modal.style.display = "block";
+           modalImg.src = this.src;
+           caption.innerHTML = this.alt;
+        }
+     });
+  
+     document.querySelectorAll('.close').forEach(function(span) {
+        span.onclick = function() {
+           this.closest('.modal').style.display = "none";
+        }
+     });
+  });
+  </script>
 
-</script>
+
 
 
 
