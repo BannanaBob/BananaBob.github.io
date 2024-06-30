@@ -56,15 +56,12 @@ header {
 }
 
 .cloud99 img {
+    animation: cld calc(8s * var(--i)) linear infinite;
+    animation-play-state: paused; /* Initial state is paused */
     opacity: 0.6;
     position: absolute;
     height: 60%; /* Adjust the percentage according to your design */
     bottom: 0; /* Positioning at the bottom */
-}
-
-/* Animation class added to start cloud animations */
-.animate-clouds img {
-    animation: cld calc(8s * var(--i)) linear infinite;
 }
 
 @keyframes cld {
@@ -88,13 +85,6 @@ header {
     .container-1 {
         height: 60vh; /* Adjust height for small screens */
         min-height: 350px; /* Minimum height for small screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container-1 {
-        height: 50vh; /* Adjust height for very small screens */
-        min-height: 300px; /* Minimum height for very small screens */
     }
 }
 
