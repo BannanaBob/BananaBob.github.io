@@ -543,12 +543,6 @@
     filter: brightness(1);
     pointer-events: initial;
   }
- 
- .gallery > input:checked {
-    transform: translateY(calc(1.75*var(--s))) scale(.5) rotate(225deg);
-         transform-origin: center; /* Ensure the transformation origin is centered */
-    --b: 70%;
-  }
-  
+
   
   
