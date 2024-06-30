@@ -1199,7 +1199,10 @@ padding-top: 6rem;
     line-height: 2;
     padding: 1rem;
     text-shadow: 1px 1px #0c101d5e;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	
+    font-family: var(--third_font);
+    font-weight: 700;
+    font-style: normal;
 }
 
 
@@ -1416,7 +1419,6 @@ padding-top: 6rem;
         padding-left: 5rem;
         text-align: left;
         font-size: 1.5rem;
-        color: var(--light-black);
         line-height: 2;
         padding: 1rem;
         }
@@ -1445,7 +1447,6 @@ padding-top: 6rem;
         padding-left: 5rem;
         text-align: left;
         font-size: 1.5rem;
-        color: var(--light-black);
         line-height: 2;
         padding: 1rem;
         }
