@@ -1176,7 +1176,7 @@ padding-top: 6rem;
     color: var(--black);   
     margin-bottom: 4rem;
     top: 3rem;
-    left: 3rem;
+    padding: 2rem;
     position: relative;
     display: flex;
     align-items:center;
@@ -1410,9 +1410,7 @@ padding-top: 6rem;
         .map h1 {
         font-size: 3rem;
         margin-bottom: 4rem;
-        top: 3rem;
-        left: 3rem;
-        
+        top: 3rem;        
         }
     
         .map p {
