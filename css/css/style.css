@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Julee&family=Style+Script&display=swap');
 
 
 
 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Julee&family=Sedgwick+Ave&family=Style+Script&display=swap');
 :root{
     --main-color:#8e44ad;
     --black:#222;
@@ -16,8 +23,14 @@
     --border:.1rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
-    --first_font:'Satisfy', cursive;
-    --second_font:font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    --first_font: "Amatic SC", sans-serif;
+    --second_font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    --third_font: "Amatic SC", sans-serif;
+    --fourth_font: "Alumni Sans", sans-serif;
+    --fift_font: "Style Script", cursive;
+    --sixt_font: "Sedgwick Ave", cursive;
+
+
  }
 
 * {
@@ -25,7 +38,7 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize; 
+    text-transform: none; 
 }
 
 /*--------scroll bar---------*/
@@ -45,7 +58,10 @@ html{
  html::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
  }
- 
+
+
+
+
 
  section{
     padding:5rem 10%;
@@ -104,8 +120,14 @@ html{
     font-size: 1.7rem;
     padding: 1rem 3rem;
     cursor: pointer;
-    font-family: fantasy, "Comic Sans MS", "Papyrus", cursive, sans-serif;
     text-transform: uppercase;
+
+
+    line-height: 2;
+    font-family: var(--fourth_font);
+  
+    font-weight: 400;
+    font-style: normal;
 }
 
 .btn {
@@ -116,13 +138,21 @@ html{
     font-size: 1.7rem;
     padding: 1rem 3rem;
     cursor: pointer;
-    font-family: fantasy;
     text-transform: uppercase;
 
+    line-height: 2;
+    font-family: var(--fourth_font);
+  
+    font-weight: 400;
+    font-style: normal;
 }
 
 .btn:hover{
     color: var(--main-color);
+}
+
+.btn1:hover{
+  color: var(--main-color);
 }
 
  @keyframes fadeIn {
@@ -158,8 +188,11 @@ html{
 .header .logo {
     font-size: 4.5rem;
     color: var(--black);
-    font-family:'Satisfy', cursive;
+    font-family: var(--first_font);
     transition: color 0.3s; /* Smooth transition */
+
+    font-weight: 700;
+    font-style: normal;
 
 }
 
@@ -367,9 +400,18 @@ html{
     margin: 2rem;
     margin-right: 1rem;
     padding: 1rem;
+    
+    text-transform: none;
     text-shadow: 1px 1px #f1f2f598;
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 1px solid #ddd;
+    font-size: 2.5rem;
+    transition: all 0.2s linear;
+    padding-right: 1rem;
+    line-height: 2;
+    color: var(--black);
+    font-family: var(--third_font);
+    font-weight: 700;
+    font-style: normal;
 }
 
 
@@ -458,12 +500,16 @@ html{
 /*--------animace fadeIn nadpisu---------*/
 .home .slide .content span{
     display: block;
-    font-family: fantasy, "Comic Sans MS", "Papyrus", cursive, sans-serif;
-    font-size: 2.5rem;
+    font-family: var(--fift_font);
+    font-size: 3.5rem;
     color: rgb(255, 255, 255);
     text-shadow: var(--text-shadow);
     padding-bottom: 1rem;
     animation: fadeIn 0.4s linear backwards 0.2s;
+
+
+    font-weight: 400;
+  font-style: normal;
 }
 
 .home .slide .content h3 {
@@ -559,9 +605,17 @@ html{
 .home_ul li {
   padding: 8px;
   border-bottom: 1px solid #ddd;
-  font-size: large;
+  font-size: 2.5rem;
   transition: all 0.2s linear;
   padding-right: 1rem;
+
+
+  line-height: 2;
+  color: var(--black);
+  font-family: var(--first_font);
+
+  font-weight: 700;
+  font-style: normal;
 }
 
 .home_ul li:hover {
@@ -633,9 +687,12 @@ html{
 /*--------text ---------*/
 .service .box-container .box h3 {
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding-top: 1rem; 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--sixt_font);
+
+    font-weight: 700;
+  font-style: normal;
 }
 
 /*--------dulezite flex dohromady s align-items ---------*/
@@ -662,16 +719,24 @@ html{
 .home-about .content h3 {
     font-size: 3.5rem;
     color: var(--black);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--sixt_font);
+    font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .home-about .content p {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1rem 0;
     line-height: 2;
     color: var(--black);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--first_font);
     text-shadow: 1px 1px #0a0a0af6;
+
+    font-weight: 700;
+    font-style: normal;
+
+
 }
 
 .home-packages {
@@ -714,8 +779,14 @@ html{
 }
 
 .home-packages .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color:var(--black);
+  font-size: 2.5rem;
+  color: var(--black);
+  background-color: rgba(26, 88, 33, 0.838);
+  line-height: 2;
+  color: var(--black);
+  font-family: var(--third_font);
+  font-weight: 700;
+  font-style: normal;
 
 }
 
@@ -723,10 +794,20 @@ html{
   color: var(--light-black);
   line-height: 2;
   padding: 1rem 0;
-  text-transform: capitalize;
   text-shadow: 1px 1px #f1f2f598;
-  font-size: large;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  border-bottom: 1px solid #ddd;
+  font-size: 2.5rem;
+  transition: all 0.2s linear;
+  padding-right: 1rem;
+
+
+  line-height: 2;
+  color: var(--black);
+  font-family: var(--first_font);
+
+  font-weight: 700;
+  font-style: normal;
 }
 
 
@@ -785,21 +866,32 @@ html{
 }
 
 .about .content h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--black);
-    font-family: var(--first_font);
+    font-family: var(--sixt_font);
+    font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .about .content p {
-    font-size: 2rem;
-    color: var(--light-black);
-    line-height: 2;
-    padding: 1rem;
-    text-shadow: 1px 1px #0a0a0af6;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+  text-shadow: 1px 1px #f1f2f598;
+
+  border-bottom: 1px solid #ddd;
+  font-size: 2.5rem;
+  transition: all 0.2s linear;
+  padding-right: 1rem;
 
 
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 2;
+  color: var(--black);
+  font-family: var(--third_font);
+
+  font-weight: 700;
+  font-style: normal;
 }
 
 
@@ -836,8 +928,9 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+padding-top: 6rem;
 
-        max-height: 90vh; /* Set maximum height */
+        max-height: 80vh; /* Set maximum height */
         overflow-y: auto; /* Enable vertical scrolling */
     }
 
@@ -876,12 +969,6 @@ html{
       max-width: 250px;
     
       }
-
-
-
-
-
-
 
 
 
@@ -1017,6 +1104,9 @@ html{
     border-color: aliceblue;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-bottom: 3px solid #ddd;
+
+    background-color: #fff;
+
 }
 
 .nav__menu ul li:hover .dropdown__menu ul li:hover {
@@ -1082,8 +1172,9 @@ html{
 
 
 .map h1 {
+    font-size: 3.5rem;
+    color: var(--black);   
     margin-bottom: 4rem;
-    font-weight: bold;
     top: 3rem;
     left: 3rem;
     position: relative;
@@ -1091,12 +1182,12 @@ html{
     align-items:center;
     text-align: center;
     margin-top: 3rem;
-    font-size: 3.5rem;
-    color: var(--black);
+
     font-family: var(--sixt_font);
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
+
 
 }
 
@@ -1118,6 +1209,23 @@ html{
     padding-right: 5%;
 
     }
+
+
+    @media (max-width: 700px){
+   
+      .map-responsive iframe{
+        width: 350px;
+        height: 350px;
+    
+        }
+  
+      }
+
+
+
+
+
+
 
 
 
@@ -1298,18 +1406,10 @@ html{
 
         .map h1 {
         font-size: 3rem;
-        color: var(--black);   
         margin-bottom: 4rem;
-        font-weight: bold;
         top: 3rem;
         left: 3rem;
-        text-transform: capitalize;
-        position: relative;
-        display: flex;
-        align-items:center;
-        text-align: center;
-        margin-top: 3rem;
-        font-family: var(--second_font);
+        
         }
     
         .map p {
@@ -1339,8 +1439,6 @@ html{
     }
         .map h1 {
         font-size: 3rem;
-        margin-bottom: 4rem;
-        display: flex;
         }
 
         .map p {
@@ -1351,8 +1449,16 @@ html{
         line-height: 2;
         padding: 1rem;
         }
+
+        .map-responsive iframe{
+          width: 200px;
+          height: 200px;
+      
+          }
     }  
 
+
+  
 
 
 
@@ -1399,14 +1505,19 @@ html{
   padding-top: 3rem;
   margin-top: 3rem;
   border-top: 0.1rem solid var(--light-white);
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--white);
-  font-family: fantasy, "Comic Sans MS", "Papyrus", cursive, sans-serif;
+  font-family: var(--third_font);
+
+  font-weight: 700;
+
 }
 
 .footer .credit span {
     color: var(--main-color);
-    font-family: fantasy, "Comic Sans MS", "Papyrus", cursive, sans-serif;
+    font-family: var(--third_font);
+font-weight: 700;
+    font-size: 3rem;
   }
 
 
@@ -1469,16 +1580,29 @@ html{
 .packages .box-container .box .content h3 {
   font-size: 2.5rem;
   color: var(--black);
+background-color: rgba(26, 88, 33, 0.838);
+
+  line-height: 2;
+    color: var(--black);
+    font-family: var(--third_font);
+    font-weight: 700;
+    font-style: normal;
 }
 
 .packages .box-container .box .content p {
   color: var(--light-black);
-  line-height: 2;
-  padding: 1rem 0;
-  text-transform: capitalize;
-  text-shadow: 1px 1px #f1f2f598;
-  font-size: large;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 2;
+    padding: 1rem 0;
+    text-shadow: 1px 1px #f1f2f598;
+    border-bottom: 1px solid #ddd;
+    font-size: 2.5rem;
+    transition: all 0.2s linear;
+    padding-right: 1rem;
+    line-height: 2;
+    color: var(--black);
+    font-family: var(--first_font);
+    font-weight: 700;
+    font-style: normal;
 }
 
 .load-more {
@@ -2050,6 +2174,30 @@ svg {
 
 
 
+.text-under-toggle {
+  position: absolute;
+  bottom: 2rem; /* Adjust the value to position the text properly */
+  right: 5%;
+  transform: translateX(-5%);
+  
+  text-shadow: 1px 1px #f1f2f598;
+    border-bottom: 1px solid #ddd;
+    font-size: 4.5rem;
+    padding-right: 1rem;
+    line-height: 2;
+    color: var(--black);
+    font-family: var(--third_font);
+    font-weight: 700;
+    font-style: normal;
+
+
+
+
+
+}
+
+
+
 
 
 
@@ -2575,7 +2723,7 @@ input{
   .about__description {
     margin-bottom: 2rem;
     text-shadow: 0.5px 0.5px #f1f2f598;
-    font-size: 19px;
+    font-size: 14px;
   }
 
 
@@ -2605,6 +2753,7 @@ input{
     /*--hamburger- menu pri zmene velikosti okna na 768px---------*/
    @media (max-width: 768px){
    
+    
     .about__data .section__title {
       text-align: initial;
     }
@@ -2648,7 +2797,9 @@ input{
 
   .modal {
     width: 80% !important;
-    left: 3% !important;
+    left: 10% !important;
+    height: 70% !important; 
+
   }
 
   .about_pic {
@@ -2683,7 +2834,9 @@ input{
 
    .modal {
     width: 80% !important;
-    left: 3% !important;
+    left: 5% !important;
+    height: 50% !important;
+
   }
 
   .gallery {
@@ -2719,67 +2872,10 @@ input{
 }
 .heading-title{
     font-size: 3.5rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--sixt_font);
+    font-weight: 400;
+  font-style: normal;
 
 }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
